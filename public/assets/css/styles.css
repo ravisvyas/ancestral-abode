@@ -1273,6 +1273,31 @@ svg { display: block; }
 .story-toggle[aria-expanded="true"] svg {
   transform: rotate(180deg);
 }
+/* Desktop: photos left + heading/lede right, then story copy centred below */
+@media (min-width: 1025px) {
+  .story-grid {
+    grid-template-areas:
+      "media head"
+      "rest  rest";
+    row-gap: clamp(3rem, 5vw, 4.5rem);
+  }
+  .story-media-showcase { grid-area: media; }
+  .story-head { grid-area: head; }
+  .story-rest {
+    grid-area: rest;
+    width: 100%;
+    max-width: 760px;
+    margin-inline: auto;
+    padding-left: 0;
+    text-align: center;
+  }
+  .story-rest .story-toggle { margin-inline: auto; }
+  .story-rest .counter-row {
+    justify-content: center;
+    padding-top: var(--space-md);
+  }
+  .story-rest .counter { align-items: center; }
+}
 .signature {
   display: flex;
   align-items: center;
@@ -3209,6 +3234,8 @@ svg { display: block; }
     font-size: 1.02rem;
     max-width: none;
   }
+  .story-head .story-lede { margin-bottom: 0; }
+  .story-rest { margin-top: -1rem; }
   .story-body .signature {
     justify-content: center;
   }
