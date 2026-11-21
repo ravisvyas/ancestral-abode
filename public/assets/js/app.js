@@ -188,6 +188,27 @@ function toast(msg, type = 'info', duration = 4000) {
   obs.observe(counterRow);
 })();
 
+/* ── Our Story: collapsible long text ── */
+(function initStoryToggle() {
+  const more = $('#story-more');
+  const btn = $('#story-toggle');
+  if (!more || !btn) return;
+  const label = btn.querySelector('.story-toggle-label');
+  more.classList.add('is-collapsible');
+  btn.hidden = false;
+  btn.addEventListener('click', () => {
+    const open = btn.getAttribute('aria-expanded') !== 'true';
+    btn.setAttribute('aria-expanded', String(open));
+    more.classList.toggle('is-open', open);
+    more.style.maxHeight = open ? more.scrollHeight + 'px' : '';
+    label.textContent = open ? 'Show less' : 'Read the full story';
+    if (!open) $('#story').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+  window.addEventListener('resize', () => {
+    if (more.classList.contains('is-open')) more.style.maxHeight = more.scrollHeight + 'px';
+  });
+})();
+
 /* ── Tab Switcher (Rooms / Experiences) ── */
 (function initTabs() {
   const switcher = $('.tab-switcher');

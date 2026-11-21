@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css?v=mobile_v3">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=story_v4">
 </head>
 <body>
   <!-- Custom Luxury Heritage Cursor -->
@@ -244,6 +244,7 @@
           <p class="story-lede">
             You will be hosted by an Indian family that has been living in this ancestral home and has now decided to open its doors for guests. They will treat you like their own family and will fulfil all your requests &mdash; you can cook and eat with them, enjoy conversations and hear stories about this beautiful property.
           </p>
+          <div class="story-more" id="story-more">
           <p class="story-text">
             Ancestral Abode &ndash; A Boutique Homestay lies tucked in the heart of the walled city of Jaipur and offers an oasis of calm, comfort &amp; care. Reminiscent of a princely residence, the haveli revives the gracious lifestyles of the legendary Rajput princes. The magnificent building was built in 1742 A.D. for Thakur Samundar Karan ji of Thikana Sheora &amp; Natwara, direct descendants of Veer Durga Das Rathore. His family was called from Jodhpur and bestowed the Jagir in the Tonk district by the late Maharaja Sawai Jai Singh ji of Jaipur. He was given the command of the Jaipur state force to defend the state against the guerrilla attacks of the Marathas. His descendants performed the royal duties and were also members of the royal council. The family still uses a part of the building as its home.
           </p>
@@ -253,6 +254,11 @@
           <p class="story-text">
             The neighbourhood holds the rich cultural heritage of Jaipur: our haveli is surrounded by ancient temples and sits in an area that comes alive during festivals. We are 12 km from Jaipur International Airport, 6 km from Jaipur Railway Station and 1 km from the nearest metro station. All the main sights are close by &mdash; City Palace (1.7 km), Jantar Mantar (1.8 km), Hawa Mahal (1 km), Johari Bazaar (1 km) &mdash; and the Jaipur&ndash;Delhi Highway is 1 km away. Highly recommended for its terraces, room cleanliness and location.
           </p>
+          </div>
+          <button type="button" class="story-toggle" id="story-toggle" aria-expanded="false" aria-controls="story-more" hidden>
+            <span class="story-toggle-label">Read the full story</span>
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
 
           <div class="counter-row" id="counter-row">
             <div class="counter" data-target="1742" data-suffix="">
@@ -759,6 +765,6 @@
   <!-- ================= TOAST ================= -->
   <div class="toast-stack" id="toast-stack" aria-live="polite" aria-atomic="false"></div>
 
-  <script src="/assets/js/app.js?v=20261122" type="module"></script>
+  <script src="/assets/js/app.js?v=20261122b" type="module"></script>
 </body>
 </html>
