@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: ancestral_abode_mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-rootpassword}
+      MYSQL_DATABASE: ${DB_NAME:-homestay_db}
+      MYSQL_USER: ${DB_USER:-homestay_user}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-homestay_secret}
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+      - ./seed.sql:/docker-entrypoint-initdb.d/02_seed.sql:ro
+    ports:
+      - "${DB_PORT:-3306}:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build: .
+    container_name: ancestral_abode_web
+    restart: always
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      NODE_ENV: production
+      PORT: 4000
+      HOST: 0.0.0.0
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_NAME: ${DB_NAME:-homestay_db}
+      DB_USER: ${DB_USER:-homestay_user}
+      DB_PASSWORD: ${DB_PASSWORD:-homestay_secret}
+      ADMIN_USERNAME: ${ADMIN_USERNAME:-admin}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-AncestralAbode@2026}
+      JWT_SECRET: ${JWT_SECRET:-ancestral-abode-secret-key-1892}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:4000}
+      SMTP_HOST: ${SMTP_HOST:-}
+      SMTP_PORT: ${SMTP_PORT:-587}
+      SMTP_USER: ${SMTP_USER:-}
+      SMTP_PASS: ${SMTP_PASS:-}
+      EMAIL_FROM: ${EMAIL_FROM:-"Ancestral Abode Jaipur" <ancestralabodehomestay@gmail.com>}
+      ADMIN_NOTIFICATION_EMAIL: ${ADMIN_NOTIFICATION_EMAIL:-ancestralabodehomestay@gmail.com}
+    ports:
+      - "${PORT:-4000}:4000"
+
+volumes:
+  mysql_data:

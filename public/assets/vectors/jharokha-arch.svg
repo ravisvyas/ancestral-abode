@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" role="img" aria-labelledby="jharokhaTitle jharokhaDesc" fill="none">
+  <title id="jharokhaTitle">Jharokha</title>
+  <desc id="jharokhaDesc">A multi-tier scalloped haveli arch with triangular cuts, flanking pillars and a central chhatri dome.</desc>
+
+  <defs>
+    <linearGradient id="jaStone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DFB76C" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#C89B3C" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#B4532A" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="jaGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#DFB76C"/>
+      <stop offset="100%" stop-color="#B4532A"/>
+    </linearGradient>
+    <clipPath id="jaInner">
+      <path d="M60 470V250c0-46 37-84 84-84h112c47 0 84 38 84 84v220H60Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Outer arch frame -->
+  <path d="M40 500V248C40 130 133 36 250 36s210 94 210 212v252h-42V250c0-94-74-170-168-170S82 156 82 250v250H40Z" fill="url(#jaStone)"/>
+
+  <!-- Scalloped inner arch -->
+  <path d="M62 500V250c0-104 84-188 188-188s188 84 188 188v250h-40V252c0-82-66-148-148-148s-148 66-148 148v248H62Z" fill="none" stroke="url(#jaGold)" stroke-width="3"/>
+
+  <!-- Scallop lobes along the arch curve -->
+  <g fill="none" stroke="url(#jaGold)" stroke-width="2.4" stroke-linecap="round">
+    <path d="M96 196c-14-10-14-30 0-40"/>
+    <path d="M124 156c-16-8-16-32 0-40"/>
+    <path d="M160 124c-16-6-16-30 0-38"/>
+    <path d="M200 108c-14-4-14-26 0-32"/>
+    <path d="M240 108c14-4 14-26 0-32"/>
+    <path d="M280 124c16-6 16-30 0-38"/>
+    <path d="M316 156c16-8 16-32 0-40"/>
+    <path d="M344 196c14-10 14-30 0-40"/>
+  </g>
+
+  <!-- Triangular cut accents -->
+  <g fill="url(#jaGold)" opacity="0.85">
+    <path d="M150 236l14-26 14 26z"/>
+    <path d="M222 236l14-26 14 26z"/>
+    <path d="M294 236l14-26 14 26z"/>
+    <path d="M64 300l12-22 12 22z"/>
+    <path d="M312 300l12-22 12 22z"/>
+  </g>
+
+  <!-- Inner opening fill -->
+  <path d="M60 470V250c0-46 37-84 84-84h112c47 0 84 38 84 84v220H60Z" fill="#2D231E" fill-opacity="0.28"/>
+
+  <!-- Carved lattice within the opening -->
+  <g clip-path="url(#jaInner)" opacity="0.42">
+    <g stroke="url(#jaGold)" stroke-width="1.6" fill="none">
+      <path d="M40 300h320M40 340h320M40 380h320M40 420h320"/>
+      <path d="M110 210v280M160 180v300M200 170v310M240 180v300M290 210v280"/>
+      <circle cx="160" cy="300" r="14"/>
+      <circle cx="240" cy="340" r="14"/>
+      <circle cx="200" cy="380" r="14"/>
+    </g>
+  </g>
+
+  <!-- Flanking pillars -->
+  <g fill="url(#jaStone)">
+    <rect x="46" y="290" width="34" height="210" rx="4"/>
+    <rect x="320" y="290" width="34" height="210" rx="4"/>
+  </g>
+  <g fill="none" stroke="url(#jaGold)" stroke-width="2">
+    <path d="M46 316h34M46 460h34M320 316h34M320 460h34"/>
+    <path d="M54 340h18v90H54zM328 340h18v90h-18z"/>
+  </g>
+
+  <!-- Central chhatri dome -->
+  <g>
+    <path d="M170 170c0-30 13-52 30-62 17 10 30 32 30 62h-60Z" fill="url(#jaStone)" stroke="url(#jaGold)" stroke-width="2.2"/>
+    <path d="M156 170h88l-10 16h-68l-10-16Z" fill="url(#jaGold)" opacity="0.9"/>
+    <path d="M200 108V88" stroke="url(#jaGold)" stroke-width="2.4" stroke-linecap="round"/>
+    <circle cx="200" cy="82" r="6" fill="url(#jaGold)"/>
+    <path d="M182 108c6-10 12-16 18-22 6 6 12 12 18 22" fill="none" stroke="url(#jaGold)" stroke-width="1.8"/>
+    <g fill="none" stroke="url(#jaGold)" stroke-width="1.8" opacity="0.8">
+      <path d="M190 150h20M194 134h12"/>
+    </g>
+  </g>
+
+  <!-- Finial base band -->
+  <rect x="52" y="470" width="296" height="14" rx="3" fill="url(#jaGold)" opacity="0.5"/>
+  <rect x="52" y="492" width="296" height="8" rx="2" fill="url(#jaGold)" opacity="0.35"/>
+</svg>

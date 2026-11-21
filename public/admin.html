@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Portal — Ancestral Abode Homestay, Jaipur</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/admin.css">
+</head>
+<body class="admin-body">
+  <!-- Toast Container -->
+  <div class="admin-toast-container" id="admin-toasts" aria-live="polite"></div>
+
+  <!-- ================= 1. LOGIN SCREEN ================= -->
+  <div class="login-container" id="login-screen">
+    <div class="login-card">
+      <div class="login-header">
+        <div class="login-crest">
+          <img src="/assets/vectors/logo-mark.svg" alt="Ancestral Abode" width="48" height="54">
+        </div>
+        <h1 class="login-title">Ancestral Abode</h1>
+        <p class="login-subtitle">Boutique Homestay · Management &amp; Reservations Portal</p>
+      </div>
+
+      <div class="login-alert" id="login-alert" hidden></div>
+
+      <form id="login-form" class="login-form" novalidate>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" class="form-input" placeholder="e.g. admin" required autocomplete="username">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="password-wrap">
+            <input type="password" id="password" name="password" class="form-input" placeholder="Enter password" required autocomplete="current-password">
+            <button type="button" class="pwd-toggle-btn" id="toggle-pwd" aria-label="Toggle password visibility">👁️</button>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-gold btn-block" id="login-btn">
+          <span>Authenticate &amp; Enter Portal</span>
+        </button>
+
+        <div class="login-helper">
+          <p>Protected Concierge Access &bull; Est. 1892, Jaipur</p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= 2. DASHBOARD (AUTHENTICATED) ================= -->
+  <div class="portal-container" id="portal-screen" hidden>
+    <!-- Top Navbar -->
+    <header class="portal-nav">
+      <div class="nav-brand">
+        <img src="/assets/vectors/logo-mark.svg" alt="" width="32" height="36">
+        <div>
+          <span class="nav-brand-title">Ancestral Abode</span>
+          <span class="nav-brand-tag">Management Portal</span>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <a href="/" target="_blank" class="nav-link-btn" title="View Public Website">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+          <span>View Homestay</span>
+        </a>
+        <div class="user-pill">
+          <span class="user-dot"></span>
+          <span id="current-user-name">admin</span>
+        </div>
+        <button type="button" class="btn btn-outline-danger btn-sm" id="logout-btn">
+          <span>Log Out</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <main class="portal-main">
+      <!-- KPI Stats -->
+      <section class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon stat-icon-gold">₹</div>
+          <div class="stat-content">
+            <span class="stat-label">Total Revenue</span>
+            <span class="stat-val" id="stat-revenue">₹0</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon stat-icon-blue">📅</div>
+          <div class="stat-content">
+            <span class="stat-label">Total Reservations</span>
+            <span class="stat-val" id="stat-bookings">0</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon stat-icon-amber">⏳</div>
+          <div class="stat-content">
+            <span class="stat-label">Pending Confirmations</span>
+            <span class="stat-val" id="stat-pending">0</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon stat-icon-green">✉️</div>
+          <div class="stat-content">
+            <span class="stat-label">New Inquiries &amp; Concierge</span>
+            <span class="stat-val" id="stat-enquiries">0</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portal Tabs -->
+      <div class="portal-tabs" role="tablist">
+        <button type="button" class="tab-btn is-active" data-tab="rooms">
+          <span class="tab-icon">🏷️</span>
+          <span>Suites &amp; Room Pricing</span>
+        </button>
+        <button type="button" class="tab-btn" data-tab="bookings">
+          <span class="tab-icon">📖</span>
+          <span>Reservations &amp; Bookings</span>
+        </button>
+        <button type="button" class="tab-btn" data-tab="enquiries">
+          <span class="tab-icon">🛎️</span>
+          <span>Guest Inquiries &amp; Concierge</span>
+        </button>
+        <button type="button" class="tab-btn" data-tab="emails">
+          <span class="tab-icon">📨</span>
+          <span>Dispatched Emails Log</span>
+        </button>
+      </div>
+
+      <!-- Tab Content 1: Room Price Editor -->
+      <section class="tab-pane is-active" id="pane-rooms">
+        <div class="pane-header">
+          <div>
+            <h2 class="pane-title">Suites &amp; Dynamic Nightly Rates</h2>
+            <p class="pane-desc">Change the price per night for each room type below. Any update saves immediately to the database and recalculates prices for website visitors in real-time.</p>
+          </div>
+          <button type="button" class="btn btn-outline btn-sm" id="refresh-rooms-btn">↻ Refresh</button>
+        </div>
+
+        <div class="rooms-pricing-grid" id="admin-rooms-grid">
+          <!-- Injected dynamically -->
+        </div>
+      </section>
+
+      <!-- Tab Content 2: Bookings Manager -->
+      <section class="tab-pane" id="pane-bookings" hidden>
+        <div class="pane-header">
+          <div>
+            <h2 class="pane-title">Guest Reservations</h2>
+            <p class="pane-desc">Manage guest bookings, change reservation status, or send customized payment instructions &amp; confirmation emails.</p>
+          </div>
+          <div class="filter-actions">
+            <div class="search-wrap">
+              <input type="text" id="search-bookings" class="form-input form-input-sm" placeholder="Search reference, name, phone...">
+            </div>
+            <select id="filter-booking-status" class="form-select form-select-sm">
+              <option value="">All Statuses</option>
+              <option value="pending">Pending</option>
+              <option value="confirmed">Confirmed</option>
+              <option value="cancelled">Cancelled</option>
+            </select>
+            <button type="button" class="btn btn-outline btn-sm" id="refresh-bookings-btn">↻ Refresh</button>
+          </div>
+        </div>
+
+        <div class="table-container">
+          <table class="portal-table" id="bookings-table">
+            <thead>
+              <tr>
+                <th>Reference</th>
+                <th>Suite</th>
+                <th>Guest Details</th>
+                <th>Dates &amp; Stay</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="bookings-table-body">
+              <tr><td colspan="7" class="table-empty">Loading reservations...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Tab Content 3: Enquiries & Concierge -->
+      <section class="tab-pane" id="pane-enquiries" hidden>
+        <div class="pane-header">
+          <div>
+            <h2 class="pane-title">Guest Queries &amp; Concierge Requests</h2>
+            <p class="pane-desc">All user requests submitted through the homestay website (concierge transport, experiences, room inquiries).</p>
+          </div>
+          <button type="button" class="btn btn-outline btn-sm" id="refresh-enquiries-btn">↻ Refresh</button>
+        </div>
+
+        <div class="table-container">
+          <table class="portal-table" id="enquiries-table">
+            <thead>
+              <tr>
+                <th>Source</th>
+                <th>Guest Name</th>
+                <th>Contact</th>
+                <th>Service / Subject</th>
+                <th>Message / Details</th>
+                <th>Date Received</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="enquiries-table-body">
+              <tr><td colspan="8" class="table-empty">Loading enquiries...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Tab Content 4: Email Logs -->
+      <section class="tab-pane" id="pane-emails" hidden>
+        <div class="pane-header">
+          <div>
+            <h2 class="pane-title">Dispatched Emails Log</h2>
+            <p class="pane-desc">Live audit of transactional emails sent to guests and administrative notifications dispatched to ancestralabodehomestay@gmail.com.</p>
+          </div>
+          <button type="button" class="btn btn-outline btn-sm" id="refresh-emails-btn">↻ Refresh</button>
+        </div>
+
+        <div class="table-container">
+          <table class="portal-table" id="emails-table">
+            <thead>
+              <tr>
+                <th>Recipient</th>
+                <th>Subject</th>
+                <th>Preview</th>
+                <th>Timestamp</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="emails-table-body">
+              <tr><td colspan="5" class="table-empty">Loading email dispatch history...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- ================= PAYMENT DETAILS / LINK MODAL ================= -->
+  <div class="admin-modal-backdrop" id="payment-modal" hidden>
+    <div class="admin-modal-card">
+      <div class="admin-modal-head">
+        <h3 class="admin-modal-title">Send Payment Details &amp; Link</h3>
+        <button type="button" class="admin-modal-close" id="close-payment-modal">&times;</button>
+      </div>
+      <div class="admin-modal-body">
+        <p class="admin-modal-text">Send an official email to the guest with UPI details, banking information, or an online payment link.</p>
+        <div class="modal-booking-summary" id="payment-modal-booking-info"></div>
+
+        <div class="form-group">
+          <label for="payment-link-input">Online Payment Link (Optional)</label>
+          <input type="url" id="payment-link-input" class="form-input" placeholder="e.g. https://rzp.io/l/your-link or leave blank for UPI">
+        </div>
+
+        <div class="form-group">
+          <label for="payment-notes-input">Custom Note / Bank Transfer Instructions (Optional)</label>
+          <textarea id="payment-notes-input" class="form-input form-textarea" rows="3" placeholder="Add custom notes, e.g. 'Kindly deposit 50% advance to confirm your heritage suite hold.'"></textarea>
+        </div>
+      </div>
+      <div class="admin-modal-foot">
+        <button type="button" class="btn btn-outline" id="cancel-payment-modal">Cancel</button>
+        <button type="button" class="btn btn-gold" id="confirm-send-payment-btn">
+          <span>Dispatch Payment Email</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= REPLY ENQUIRY MODAL ================= -->
+  <div class="admin-modal-backdrop" id="reply-modal" hidden>
+    <div class="admin-modal-card">
+      <div class="admin-modal-head">
+        <h3 class="admin-modal-title">Reply to Guest Query</h3>
+        <button type="button" class="admin-modal-close" id="close-reply-modal">&times;</button>
+      </div>
+      <div class="admin-modal-body">
+        <div class="form-group">
+          <label>Recipient</label>
+          <input type="text" id="reply-to" class="form-input" readonly>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" id="reply-subject" class="form-input" value="Response from Ancestral Abode Homestay, Jaipur">
+        </div>
+        <div class="form-group">
+          <label>Message Content</label>
+          <textarea id="reply-message" class="form-input form-textarea" rows="5" placeholder="Type your response to the guest..."></textarea>
+        </div>
+      </div>
+      <div class="admin-modal-foot">
+        <button type="button" class="btn btn-outline" id="cancel-reply-modal">Cancel</button>
+        <button type="button" class="btn btn-gold" id="confirm-send-reply-btn">
+          <span>Send Email Reply</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/js/admin.js" type="module"></script>
+</body>
+</html>

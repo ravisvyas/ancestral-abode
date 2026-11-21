@@ -1,0 +1,12 @@
+node_modules/
+.env
+.mysql/
+npm-debug.log*
+.DS_Store
+coverage/
+*.log
+dist/
+_storage/
+_storage.zip
+.env.*
+!.env.example

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" fill="none">
+  <defs>
+    <pattern id="logoPattern" width="160" height="160" patternUnits="userSpaceOnUse">
+      <!-- Logo cusped arch silhouette in hairline gold/terracotta -->
+      <path d="M40 140 V70 C40 45 60 25 80 20 C100 25 120 45 120 70 V140" stroke="#B4532A" stroke-width="0.75" stroke-opacity="0.14" stroke-dasharray="3 3"/>
+      
+      <!-- Central chhatri dome contour -->
+      <path d="M80 32 C74 42 70 48 80 56 C90 48 86 42 80 32 Z" stroke="#C89B3C" stroke-width="0.75" stroke-opacity="0.18" fill="none"/>
+      
+      <!-- Concentric sun rosettes at quadrant nodes (from logo top and corners) -->
+      <circle cx="80" cy="80" r="10" stroke="#B4532A" stroke-width="0.7" stroke-opacity="0.15"/>
+      <circle cx="80" cy="80" r="5" stroke="#C89B3C" stroke-width="0.6" stroke-opacity="0.2"/>
+      <circle cx="80" cy="80" r="1.8" fill="#B4532A" fill-opacity="0.2"/>
+
+      <circle cx="0" cy="0" r="8" stroke="#B4532A" stroke-width="0.6" stroke-opacity="0.12"/>
+      <circle cx="0" cy="0" r="3.5" fill="#C89B3C" fill-opacity="0.15"/>
+
+      <circle cx="160" cy="0" r="8" stroke="#B4532A" stroke-width="0.6" stroke-opacity="0.12"/>
+      <circle cx="160" cy="0" r="3.5" fill="#C89B3C" fill-opacity="0.15"/>
+
+      <circle cx="0" cy="160" r="8" stroke="#B4532A" stroke-width="0.6" stroke-opacity="0.12"/>
+      <circle cx="0" cy="160" r="3.5" fill="#C89B3C" fill-opacity="0.15"/>
+
+      <circle cx="160" cy="160" r="8" stroke="#B4532A" stroke-width="0.6" stroke-opacity="0.12"/>
+      <circle cx="160" cy="160" r="3.5" fill="#C89B3C" fill-opacity="0.15"/>
+
+      <!-- Logo chevron frond branching leaves (diagonal corners) -->
+      <g stroke="#C89B3C" stroke-width="0.65" stroke-opacity="0.14" stroke-linecap="round">
+        <path d="M22 22 L32 32 M24 16 L32 24 M16 24 L24 32"/>
+        <path d="M138 22 L128 32 M136 16 L128 24 M144 24 L136 32"/>
+        <path d="M22 138 L32 128 M24 144 L32 136 M16 136 L24 128"/>
+        <path d="M138 138 L128 128 M136 144 L128 136 M144 136 L136 128"/>
+      </g>
+
+      <!-- Soft wavy ripples (from logo bottom and sides) -->
+      <path d="M60 148 Q70 144 80 148 T100 148" stroke="#B4532A" stroke-width="0.6" stroke-opacity="0.12" fill="none"/>
+    </pattern>
+  </defs>
+  <rect width="160" height="160" fill="url(#logoPattern)"/>
+</svg>

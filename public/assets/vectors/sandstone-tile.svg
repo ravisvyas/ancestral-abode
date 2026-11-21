@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Sandstone relief tile texture" fill="none">
+  <title>Sandstone relief tile</title>
+  <defs>
+    <pattern id="sandTile" width="80" height="80" patternUnits="userSpaceOnUse">
+      <!-- Ultra-delicate haveli jali filigree -->
+      <path d="M40 6 L74 40 L40 74 L6 40 Z" stroke="#B4532A" stroke-width="0.5" stroke-opacity="0.12" fill="none"/>
+      <path d="M40 16 L64 40 L40 64 L16 40 Z" stroke="#C89B3C" stroke-width="0.4" stroke-opacity="0.10" fill="none"/>
+      <circle cx="40" cy="40" r="3" stroke="#C89B3C" stroke-width="0.4" stroke-opacity="0.15" fill="none"/>
+      <!-- Delicate corner star lines -->
+      <path d="M0 0 L14 14 M80 0 L66 14 M0 80 L14 66 M80 80 L66 66" stroke="#B4532A" stroke-width="0.4" stroke-opacity="0.08"/>
+      <circle cx="0" cy="0" r="1.5" fill="#C89B3C" fill-opacity="0.12"/>
+      <circle cx="80" cy="0" r="1.5" fill="#C89B3C" fill-opacity="0.12"/>
+      <circle cx="0" cy="80" r="1.5" fill="#C89B3C" fill-opacity="0.12"/>
+      <circle cx="80" cy="80" r="1.5" fill="#C89B3C" fill-opacity="0.12"/>
+    </pattern>
+  </defs>
+  <rect width="160" height="160" fill="url(#sandTile)"/>
+</svg>

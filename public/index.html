@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#2D231E">
+  <title>Ancestral Abode — A Boutique Homestay, Jaipur</title>
+  <meta name="description" content="Ancestral Abode is a family-run boutique homestay in a 1742 haveli in the walled city of Jaipur, 1 km from Hawa Mahal, with rooftop views of Nahargarh Fort.">
+  <link rel="icon" href="/assets/vectors/logo-mark.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=mobile_v3">
+</head>
+<body>
+  <!-- Custom Luxury Heritage Cursor -->
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursor-follower" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#hero">Skip to content</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <!-- Left spacer for mobile centering balance -->
+      <div class="header-spacer" aria-hidden="true"></div>
+
+      <!-- Left Navigation -->
+      <nav class="header-nav header-nav-left" aria-label="Primary Left">
+        <a href="#story" class="nav-link">Our Story</a>
+        <a href="#rooms" class="nav-link">Rooms</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+      </nav>
+
+      <!-- Center Brand Logo (Exact Vector from Logo Design PDF) -->
+      <a class="brand brand-center" href="#hero" aria-label="Ancestral Abode — home">
+        <img class="brand-logo-pdf" src="/assets/vectors/ancestral_logo_exact_transparent.svg?v=clean" alt="Ancestral Abode — A Boutique Homestay" width="62" height="84">
+      </a>
+
+      <!-- Right Navigation -->
+      <nav class="header-nav header-nav-right" aria-label="Primary Right">
+        <a href="#experiences" class="nav-link">Experiences</a>
+        <a href="#sights" class="nav-link">Sights</a>
+        <a href="#journal" class="nav-link">Journal</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav-drawer" aria-label="Open menu">
+        <span class="nav-toggle-text">Menu</span>
+        <span class="nav-toggle-icon" aria-hidden="true">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="mobile-nav-backdrop" data-close-mobile-nav></div>
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-top">
+        <div class="brand brand-mobile">
+          <img class="brand-logo-pdf mobile-logo" src="/assets/vectors/ancestral_logo_exact_transparent.svg?v=clean" alt="Ancestral Abode — A Boutique Homestay" width="50" height="68">
+        </div>
+        <button class="mobile-nav-close" type="button" aria-label="Close menu" data-close-mobile-nav>
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="#story" class="mobile-nav-link"><span class="link-idx">01</span><span class="link-label">Our Story</span></a>
+        <a href="#rooms" class="mobile-nav-link"><span class="link-idx">02</span><span class="link-label">Suites & Rooms</span></a>
+        <a href="#gallery" class="mobile-nav-link"><span class="link-idx">03</span><span class="link-label">Photo Gallery</span></a>
+        <a href="#experiences" class="mobile-nav-link"><span class="link-idx">04</span><span class="link-label">Curated Experiences</span></a>
+        <a href="#sights" class="mobile-nav-link"><span class="link-idx">05</span><span class="link-label">Jaipur Sights</span></a>
+        <a href="#journal" class="mobile-nav-link"><span class="link-idx">06</span><span class="link-label">Haveli Journal</span></a>
+      </nav>
+      <div class="mobile-nav-footer">
+        <span class="mobile-contact-label">Heritage Homestay Concierge</span>
+        <a href="tel:+919660041516" class="mobile-contact-val">(+91) 9660041516</a>
+        <a href="mailto:ancestralabodehomestay@gmail.com" class="mobile-contact-val" style="font-size:0.85rem;text-transform:lowercase;letter-spacing:0.02em;color:var(--c-gold);">ancestralabodehomestay@gmail.com</a>
+        <span class="mobile-contact-loc">Ancestral Abode Homestay, 34, Karnoth House, Ramganj Chopad, Jaipur</span>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ================= SECTION 1 · HERO ================= -->
+    <section class="hero" id="hero">
+      <div class="hero-slides" id="hero-slides">
+        <div class="hero-slide is-active" data-slide="0">
+          <img src="/assets/property/courtyard-colonnade-grand.jpg" alt="Grand cusped colonnade pavilion and courtyard, Ancestral Abode" fetchpriority="high" decoding="async">
+          <div class="hero-scrim"></div>
+        </div>
+        <div class="hero-slide" data-slide="1">
+          <img src="/assets/property/suite-royal-vault-king.jpg" alt="Heritage vaulted arch royal king suite, Ancestral Abode" loading="lazy" decoding="async">
+          <div class="hero-scrim"></div>
+        </div>
+        <div class="hero-slide" data-slide="2">
+          <img src="/assets/property/haveli-facade-sunlit.jpg" alt="Sunlit yellow haveli facade and arched jharokha windows" loading="lazy" decoding="async">
+          <div class="hero-scrim"></div>
+        </div>
+      </div>
+
+      <!-- Golden Dust / Firefly Particle Canvas -->
+      <canvas id="hero-particles" class="hero-particles" aria-hidden="true"></canvas>
+
+      <div class="hero-content container">
+        <p class="hero-eyebrow"><span class="rule"></span> A restored haveli in the Pink City <span class="rule"></span></p>
+        <h1 class="hero-title">Ancestral Abode</h1>
+        <p class="hero-subtitle">A family homestay in a 1742 haveli, with a courtyard and rooftop views of Nahargarh Fort — in the heart of the walled city.</p>
+
+        <div class="hero-meta">
+          <span class="hero-meta-item">From <strong>₹5,000</strong> + tax / night</span>
+        </div>
+
+        <!-- Mobile Availability Trigger Button (Only visible on mobile screens) -->
+        <div class="hero-mobile-booking">
+          <button class="btn btn-primary hero-mobile-booking-btn" type="button" data-open-booking aria-label="Open availability and booking form">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span>Check Availability</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <button class="hero-nav hero-nav-prev" type="button" aria-label="Previous slide">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="hero-nav hero-nav-next" type="button" aria-label="Next slide">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+
+      <div class="hero-dots" id="hero-dots" role="tablist" aria-label="Hero slides"></div>
+
+      <!-- Floating booking widget -->
+      <div class="booking-widget" id="booking">
+        <form class="booking-bar" id="booking-bar" novalidate>
+          <div class="booking-field booking-field-date">
+            <label for="check-in">Check-in</label>
+            <input type="date" id="check-in" name="checkIn" required>
+          </div>
+          <span class="booking-divider" aria-hidden="true"></span>
+          <div class="booking-field booking-field-date">
+            <label for="check-out">Check-out</label>
+            <input type="date" id="check-out" name="checkOut" required>
+          </div>
+          <span class="booking-divider" aria-hidden="true"></span>
+          <div class="booking-field booking-field-select">
+            <label for="room-type">Room Type</label>
+            <div class="select-wrap">
+              <select id="room-type" name="roomId">
+                <option value="">Any suite</option>
+              </select>
+              <svg class="select-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <span class="booking-divider" aria-hidden="true"></span>
+          <div class="booking-field booking-field-guests">
+            <label id="guests-label">Guests</label>
+            <div class="stepper" role="group" aria-labelledby="guests-label">
+              <button type="button" class="stepper-btn" data-stepper="down" aria-label="Decrease guests">−</button>
+              <input type="number" id="guests" name="guests" value="2" min="1" max="20" inputmode="numeric" aria-label="Number of guests">
+              <button type="button" class="stepper-btn" data-stepper="up" aria-label="Increase guests">+</button>
+            </div>
+          </div>
+          <button class="btn btn-primary booking-cta" type="submit">
+            <span>Check Availability</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+        <p class="booking-widget-note" id="booking-note" role="status" aria-live="polite"></p>
+      </div>
+
+      <a class="scroll-cue" href="#story" aria-label="Scroll to our story">
+        <span class="scroll-cue-line"></span>
+        <span class="scroll-cue-text">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ================= ROYAL SANSKRIT & HERITAGE RIBBON ================= -->
+    <div class="royal-ribbon" aria-hidden="true">
+      <div class="royal-ribbon-track">
+        <span class="ribbon-item">✦ <span>अतिथि देवो भव</span> ✦ ATITHI DEVO BHAVA</span>
+        <span class="ribbon-sep">✦</span>
+        <span class="ribbon-item">1742 HAVELI</span>
+        <span class="ribbon-sep">✦</span>
+        <span class="ribbon-item">HAND-CARVED SANDSTONE</span>
+        <span class="ribbon-sep">✦</span>
+        <span class="ribbon-item">STEPWELL COURTYARD</span>
+        <span class="ribbon-sep">✦</span>
+        <span class="ribbon-item">ROYAL RAJASTHANI HOSPITALITY</span>
+        <span class="ribbon-sep">✦</span>
+        <span class="ribbon-item">OLD CITY · JAIPUR</span>
+        <span class="ribbon-sep">✦</span>
+        <span class="ribbon-item">TWO HERITAGE SUITES</span>
+        <span class="ribbon-sep">✦</span>
+        <span class="ribbon-item">✦ <span>अतिथि देवो भव</span> ✦ ATITHI DEVO BHAVA</span>
+        <span class="ribbon-sep">✦</span>
+        <span class="ribbon-item">1742 HAVELI</span>
+        <span class="ribbon-sep">✦</span>
+        <span class="ribbon-item">HAND-CARVED SANDSTONE</span>
+        <span class="ribbon-sep">✦</span>
+        <span class="ribbon-item">STEPWELL COURTYARD</span>
+        <span class="ribbon-sep">✦</span>
+        <span class="ribbon-item">ROYAL RAJASTHANI HOSPITALITY</span>
+        <span class="ribbon-sep">✦</span>
+        <span class="ribbon-item">OLD CITY · JAIPUR</span>
+        <span class="ribbon-sep">✦</span>
+        <span class="ribbon-item">TWO HERITAGE SUITES</span>
+        <span class="ribbon-sep">✦</span>
+      </div>
+    </div>
+
+    <!-- ================= SECTION 2 · OUR STORY ================= -->
+    <section class="section section-story" id="story">
+      <div class="container story-grid">
+        <!-- Story Visual Showcase (No empty voids, balanced scale) -->
+        <div class="story-media-showcase reveal">
+          <div class="story-frame-primary">
+            <img src="/assets/property/haveli-royal-entryway.jpg" alt="Grand sunlit arched entrance of Ancestral Abode" loading="lazy" decoding="async">
+          </div>
+          <div class="story-frame-secondary">
+            <img src="/assets/property/courtyard-colonnade-grand.jpg" alt="Grand cusped colonnade courtyard at Ancestral Abode" loading="lazy" decoding="async">
+          </div>
+          <div class="badge-est" aria-label="Established 1742">
+            <span class="badge-est-label">Est.</span>
+            <span class="badge-est-year">1742</span>
+            <span class="badge-est-sub">Jaipur</span>
+          </div>
+        </div>
+
+        <div class="story-body reveal">
+          <p class="section-eyebrow"><span class="rule"></span> Our Story <span class="rule"></span></p>
+          <h2 class="section-title">Welcome to Ancestral Abode</h2>
+          <p class="story-lede">
+            You will be hosted by an Indian family that has been living in this ancestral home and has now decided to open its doors for guests. They will treat you like their own family and will fulfil all your requests &mdash; you can cook and eat with them, enjoy conversations and hear stories about this beautiful property.
+          </p>
+          <p class="story-text">
+            Ancestral Abode &ndash; A Boutique Homestay lies tucked in the heart of the walled city of Jaipur and offers an oasis of calm, comfort &amp; care. Reminiscent of a princely residence, the haveli revives the gracious lifestyles of the legendary Rajput princes. The magnificent building was built in 1742 A.D. for Thakur Samundar Karan ji of Thikana Sheora &amp; Natwara, direct descendants of Veer Durga Das Rathore. His family was called from Jodhpur and bestowed the Jagir in the Tonk district by the late Maharaja Sawai Jai Singh ji of Jaipur. He was given the command of the Jaipur state force to defend the state against the guerrilla attacks of the Marathas. His descendants performed the royal duties and were also members of the royal council. The family still uses a part of the building as its home.
+          </p>
+          <p class="story-text">
+            The property offers 2 spacious guest rooms with private bathrooms, a single courtyard (chowk) and breathtaking views of the surrounding cityscape. From our rooftop terrace enjoy a clear view of the majestic Nahargarh Fort while also taking in the sights of prominent landmarks like Garh Ganesh and more.
+          </p>
+          <p class="story-text">
+            The neighbourhood holds the rich cultural heritage of Jaipur: our haveli is surrounded by ancient temples and sits in an area that comes alive during festivals. We are 12 km from Jaipur International Airport, 6 km from Jaipur Railway Station and 1 km from the nearest metro station. All the main sights are close by &mdash; City Palace (1.7 km), Jantar Mantar (1.8 km), Hawa Mahal (1 km), Johari Bazaar (1 km) &mdash; and the Jaipur&ndash;Delhi Highway is 1 km away. Highly recommended for its terraces, room cleanliness and location.
+          </p>
+
+          <div class="counter-row" id="counter-row">
+            <div class="counter" data-target="1742" data-suffix="">
+              <span class="counter-value" data-count>0</span>
+              <span class="counter-label">Built in</span>
+            </div>
+            <div class="counter" data-target="2">
+              <span class="counter-value" data-count>0</span>
+              <span class="counter-label">Guest Rooms</span>
+            </div>
+            <div class="counter" data-target="1" data-suffix=" km">
+              <span class="counter-value" data-count>0</span>
+              <span class="counter-label">To Hawa Mahal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 3 · FACILITIES ================= -->
+    <section class="section section-facilities" id="facilities">
+      <div class="container">
+        <header class="section-head reveal">
+          <div class="heritage-crest-wrap"><img class="heritage-crest-img" src="/assets/vectors/logo-jharokha-divider.svg" alt="" width="200" height="30" loading="lazy"></div>
+          <p class="section-eyebrow"><span class="rule"></span> The House <span class="rule"></span></p>
+          <h2 class="section-title">Everything a guest could<br>wish for, and nothing they didn't</h2>
+          <p class="section-lede">Six house offerings, each run by people who live in the old city and know it street by street.</p>
+        </header>
+
+        <div class="facility-grid" id="facility-grid">
+
+
+          <article class="facility-card reveal" data-delay="0">
+            <div class="facility-icon">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <path d="M10 40c0-14 8-26 22-32" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <circle cx="33" cy="9" r="4" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M24 22l-4 6M29 27l-3 7M20 30l-3 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M10 40h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Heritage Guided Walks</h3>
+            <p>Before the bazaars wake, our historian walks you through the old city — the hidden courtyards, the kachwaha fort and a family kitchen that has fed tourists since 1971.</p>
+            <span class="facility-link">Daily at 6:30am</span>
+          </article>
+
+          <article class="facility-card reveal" data-delay="60">
+            <div class="facility-icon">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <path d="M18 36V16a6 6 0 0 1 12 0v20" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                <path d="M30 22l8-6v14l-8-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <ellipse cx="24" cy="36" rx="12" ry="4" stroke="currentColor" stroke-width="1.7"/>
+                <path d="M20 12V8M28 12V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Folk Music &amp; Dance</h3>
+            <p>Santoor, dholak and the Manganiyar troupe from the old city, playing in the courtyard on the second and fourth evening of each month.</p>
+            <span class="facility-link">Twice weekly</span>
+          </article>
+
+
+          <article class="facility-card reveal" data-delay="120">
+            <div class="facility-icon">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <path d="M8 30a12 12 0 0 1 12-12 13 13 0 0 1 24 0 10 10 0 0 1-10 10H8Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14 36a10 10 0 0 1 0-12 12 12 0 0 1 4-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="36" cy="14" r="2.4" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>High-Speed Wi-Fi</h3>
+            <p>Fibre throughout the house, a dedicated work desk in every suite, and a printing room that actually works for the week that ends tomorrow.</p>
+            <span class="facility-link">Fibre · 300 Mbps</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 4 · ROOMS & EXPERIENCES ================= -->
+    <section class="section section-accommodation" id="rooms">
+      <div class="container">
+        <header class="section-head reveal">
+          <div class="heritage-crest-wrap"><img class="heritage-crest-img" src="/assets/vectors/logo-jharokha-divider.svg" alt="" width="200" height="30" loading="lazy"></div>
+          <p class="section-eyebrow"><span class="rule"></span> Stay <span class="rule"></span></p>
+          <h2 class="section-title">Rooms &amp; Experiences</h2>
+          <p class="section-lede">Spacious heritage bedrooms with private bathrooms, in a haveli built in 1742. And a house full of things to do while you are in it.</p>
+        </header>
+
+        <div class="tab-switcher reveal" role="tablist" aria-label="Accommodation and experiences">
+          <button class="tab-btn is-active" type="button" role="tab" aria-selected="true" data-tab="suites" id="tab-suites" aria-controls="panel-suites">
+            <span>Suites &amp; Haveli Rooms</span>
+          </button>
+          <button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="experiences" id="tab-experiences" aria-controls="panel-experiences">
+            <span>In-House Experiences</span>
+          </button>
+          <span class="tab-ink" aria-hidden="true"></span>
+        </div>
+
+        <div class="tab-panel is-active" id="panel-suites" role="tabpanel" aria-labelledby="tab-suites" data-panel="suites">
+          <div class="room-grid" id="room-grid">
+            <!-- injected by app.js from the API -->
+          </div>
+        </div>
+
+        <div class="tab-panel" id="panel-experiences" role="tabpanel" aria-labelledby="tab-experiences" data-panel="experiences" hidden>
+          <div class="experience-grid" id="experience-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 4B · THE HAVELI GALLERY ================= -->
+    <section class="section section-gallery" id="gallery">
+      <div class="container">
+        <header class="section-head reveal">
+          <div class="heritage-crest-wrap"><img class="heritage-crest-img" src="/assets/vectors/logo-jharokha-divider.svg" alt="" width="200" height="30" loading="lazy"></div>
+          <p class="section-eyebrow"><span class="rule"></span> A Visual Journey <span class="rule"></span></p>
+          <h2 class="section-title">The Haveli in Light &amp; Shadow</h2>
+          <p class="section-lede">An authentic glimpse inside our 1742 haveli — from sun-drenched cusped colonnades and antique suites to morning chai nooks.</p>
+        </header>
+
+        <!-- Gallery Filter Tabs -->
+        <div class="gallery-tabs reveal" role="tablist" aria-label="Gallery filters">
+          <button class="gallery-tab is-active" type="button" data-filter="all" role="tab" aria-selected="true">All Glimpses</button>
+          <button class="gallery-tab" type="button" data-filter="suites" role="tab" aria-selected="false">Suites &amp; Chambers</button>
+          <button class="gallery-tab" type="button" data-filter="courtyard" role="tab" aria-selected="false">Courtyards &amp; Facade</button>
+          <button class="gallery-tab" type="button" data-filter="lounges" role="tab" aria-selected="false">Lounges &amp; Dining</button>
+          <button class="gallery-tab" type="button" data-filter="details" role="tab" aria-selected="false">Baths &amp; Heritage Details</button>
+        </div>
+
+        <!-- Dynamic Photo Mosaic Grid -->
+        <div class="gallery-mosaic reveal" id="gallery-mosaic">
+          <!-- Injected dynamically by app.js with real photos -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 5 · PLACES OF INTEREST ================= -->
+    <section class="section section-sights" id="sights">
+      <div class="container">
+        <header class="section-head reveal">
+          <div class="heritage-crest-wrap"><img class="heritage-crest-img" src="/assets/vectors/logo-jharokha-divider.svg" alt="" width="200" height="30" loading="lazy"></div>
+          <p class="section-eyebrow"><span class="rule"></span> Curated City Guide <span class="rule"></span></p>
+          <h2 class="section-title">Places of Interest</h2>
+          <p class="section-lede">Within half an hour of the front door — and worth every one of them.</p>
+        </header>
+      </div>
+
+      <div class="sights-carousel-wrap">
+        <div class="sights-carousel" id="sights-carousel" tabindex="0" aria-label="Places of interest carousel">
+          <!-- injected by app.js -->
+        </div>
+        <button class="carousel-btn carousel-prev" type="button" data-carousel="sights-carousel" data-direction="prev" aria-label="Previous sights">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="carousel-btn carousel-next" type="button" data-carousel="sights-carousel" data-direction="next" aria-label="Next sights">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 6 · REVIEWS ================= -->
+    <section class="section section-reviews" id="reviews">
+      <div class="container">
+        <header class="section-head reveal">
+          <div class="heritage-crest-wrap"><img class="heritage-crest-img" src="/assets/vectors/logo-jharokha-divider.svg" alt="" width="200" height="30" loading="lazy"></div>
+          <p class="section-eyebrow"><span class="rule"></span> Guest Book <span class="rule"></span></p>
+          <h2 class="section-title">Verified Guest Reviews</h2>
+          <p class="section-lede">Every review below comes from a guest who stayed in the house.</p>
+        </header>
+      </div>
+
+      <div class="reviews-masonry-wrap">
+        <div class="reviews-masonry" id="reviews-masonry">
+          <!-- injected by app.js -->
+        </div>
+        <button class="carousel-btn carousel-prev" type="button" data-carousel="reviews-masonry" data-direction="prev" aria-label="Previous reviews">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="carousel-btn carousel-next" type="button" data-carousel="reviews-masonry" data-direction="next" aria-label="Next reviews">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 7 · JOURNAL ================= -->
+    <section class="section section-journal" id="journal">
+      <div class="container">
+        <header class="section-head reveal">
+          <div class="heritage-crest-wrap"><img class="heritage-crest-img" src="/assets/vectors/logo-jharokha-divider.svg" alt="" width="200" height="30" loading="lazy"></div>
+          <p class="section-eyebrow"><span class="rule"></span> The Journal <span class="rule"></span></p>
+          <h2 class="section-title">Notes from the house</h2>
+          <p class="section-lede">Restoration diaries, festival dispatches and the stories behind the walls.</p>
+        </header>
+
+        <div class="journal-grid" id="journal-grid">
+          <!-- injected by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA BAND ================= -->
+    <section class="cta-band" id="reserve">
+      <img class="cta-band-bg" src="/assets/property/courtyard-colonnade-grand.jpg" alt="Grand cusped colonnade pavilion at Ancestral Abode" loading="lazy" aria-hidden="true">
+      <div class="cta-band-inner">
+        <p class="section-eyebrow section-eyebrow-light"><span class="rule"></span> Residences <span class="rule"></span></p>
+        <h2 class="cta-band-title">The house is waiting</h2>
+        <p class="cta-band-text">Two suites, one family, and a very long list of things to do in the old city.</p>
+        <button class="btn btn-gold btn-lg" type="button" data-open-booking>Reserve Your Stay</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= SECTION 8 · FOOTER ================= -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-border" aria-hidden="true"></div>
+    <div class="container footer-grid">
+      <div class="footer-col footer-brand-col">
+        <a class="brand brand-footer" href="#hero">
+          <img class="brand-mark" src="/assets/vectors/logo-mark.svg" alt="Ancestral Abode Logo" width="46" height="54">
+          <span class="brand-text">
+            <span class="brand-name">Ancestral Abode</span>
+            <span class="brand-tag">A Boutique Homestay · Jaipur</span>
+          </span>
+        </a>
+        <p class="footer-blurb">
+          A restored merchant haveli in the old city of Jaipur. We keep twelve rooms
+          to ourselves, so the house always feels like a house.
+        </p>
+        <div class="footer-contact">
+          <a href="tel:+919660041516">(+91) 9660041516</a>
+          <a href="mailto:ancestralabodehomestay@gmail.com">ancestralabodehomestay@gmail.com</a>
+          <span>Ancestral Abode Homestay, 34, Karnoth House, Ramganj Chopad, Jaipur</span>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h2.5l.5-3H13v-2c0-.6.4-1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
+          <a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7c-2.8 0-4.5 2-4.5 4.2 0 1.3.7 2.4 1.9 2.8.2.1.4 0 .5-.2l.2-.8c.1-.2 0-.3-.1-.5-.3-.4-.5-.9-.5-1.5 0-1.6 1.3-2.9 3.2-2.9 1.7 0 2.7 1 2.7 2.5 0 1.9-.9 3.4-2.1 3.4-.7 0-1.2-.6-1-1.3.2-.8.6-1.6.6-2.2 0-.5-.3-.9-.8-.9-.7 0-1.2.7-1.2 1.6 0 .6.2 1 .2 1l-.8 3.2c-.2.9 0 2 .1 2.1 0 .1.1.1.2 0 .1-.1.8-1 1-1.9.1-.6.5-1.3.8-1.7.2.3.5.6.9.6 1.3 0 2.2-1.2 2.2-3 0-1.6-1.4-3-3.5-3Z" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#rooms">Rooms &amp; Suites</a></li>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#sights">Places of Interest</a></li>
+          <li><a href="#journal">The Journal</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Stay</h4>
+        <ul class="footer-links">
+          <li><a href="#booking" data-open-booking>Book a Stay</a></li>
+          <li><a href="#booking" data-open-booking>Group Bookings</a></li>
+          <li><a href="#" data-concierge>Private Concierge</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li data-reviews-link><a href="#reviews">Guest Reviews</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-news-col">
+        <h4 class="footer-heading">Letters from the house</h4>
+        <p class="footer-note">Seasonal menus, festival dates and the occasional note on restoration. Six times a year, no more.</p>
+        <form class="newsletter-form" id="newsletter-form" novalidate>
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input type="email" id="newsletter-email" name="email" placeholder="your@email.com" required autocomplete="email">
+          <button class="btn btn-gold" type="submit" aria-label="Subscribe">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+        <p class="newsletter-status" id="newsletter-status" role="status" aria-live="polite"></p>
+
+        <a class="whatsapp-btn" href="https://wa.me/919660041516?text=Hello%20Ancestral%20Abode,%20I%20would%20like%20to%20inquire%20about%20a%20stay." target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.7.8c-.1.2-.3.2-.5.1-1.3-.6-2.2-1.1-3.1-2.6-.2-.3.1-.5.2-.7l.4-.5c.1-.2.1-.3 0-.5l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.1.2 2 3.1 4.9 4.2 2.4.9 2.9.8 3.4.7.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.5-.3Z"/></svg>
+          <span>WhatsApp Concierge</span>
+        </a>
+      </div>
+
+      <div class="footer-col footer-map-col">
+        <h4 class="footer-heading">Find the house</h4>
+        <div class="map-frame">
+          <iframe
+            title="Map showing Ancestral Abode in Ramganj Chopad, Jaipur"
+            src="https://www.google.com/maps?q=34%2C%20Karnoth%20House%2C%20Ramganj%20Chopad%2C%20Jaipur&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+        <p class="footer-note">34, Karnoth House, Ramganj Chopad, Jaipur. Ten minutes from City Palace &amp; Hawa Mahal.</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Ancestral Abode. All rights reserved.</p>
+      <ul class="footer-legal">
+        <li><a href="#">Cancellation Policy</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="/assets/images/CREDITS.md">Image Credits</a></li>
+        <li><a href="/admin" target="_blank" style="color:var(--c-gold);font-weight:600;">Admin Portal</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- ================= ROOM DETAIL MODAL ================= -->
+  <div class="modal-backdrop" id="room-modal" role="dialog" aria-modal="true" aria-labelledby="room-modal-title" hidden>
+    <div class="modal" role="document">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <div class="modal-gallery" id="room-modal-gallery"></div>
+      <div class="modal-body">
+        <p class="section-eyebrow"><span class="rule"></span> <span id="room-modal-kicker">Suite</span> <span class="rule"></span></p>
+        <h3 class="modal-title" id="room-modal-title">Room</h3>
+        <div class="modal-meta" id="room-modal-meta"></div>
+        <p class="modal-text" id="room-modal-text"></p>
+        <ul class="modal-amenities" id="room-modal-amenities"></ul>
+        <div class="modal-price">
+          <div>
+            <span class="modal-price-label">Per night + tax</span>
+            <span class="modal-price-value" id="room-modal-price">₹0</span>
+          </div>
+          <div class="modal-price-actions">
+            <button class="btn btn-ghost" type="button" data-close-modal>Keep Browsing</button>
+            <a class="btn btn-whatsapp-modal" id="modal-whatsapp" href="https://wa.me/919660041516?text=Hello%20Ancestral%20Abode,%20I%20would%20like%20to%20inquire%20about%20availability." target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.7.8c-.1.2-.3.2-.5.1-1.3-.6-2.2-1.1-3.1-2.6-.2-.3.1-.5.2-.7l.4-.5c.1-.2.1-.3 0-.5l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.1.2 2 3.1 4.9 4.2 2.4.9 2.9.8 3.4.7.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.5-.3Z"/></svg>
+              <span>Inquire on WhatsApp</span>
+            </a>
+            <button class="btn btn-primary" type="button" id="modal-reserve">Reserve This Room</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= BOOKING MODAL ================= -->
+  <div class="modal-backdrop" id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="booking-modal-title" hidden>
+    <div class="modal modal-booking" role="document">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+
+      <div class="booking-modal-grid">
+        <aside class="booking-summary" id="booking-summary">
+          <img class="booking-summary-img" id="booking-summary-img" src="/assets/property/suite-royal-vault-king.jpg" alt="Ancestral Abode Suite">
+          <div class="booking-summary-body">
+            <p class="section-eyebrow section-eyebrow-light"><span class="rule"></span> Your Stay <span class="rule"></span></p>
+            <h3 class="booking-summary-title" id="booking-summary-title">Select a room</h3>
+            <ul class="booking-summary-list" id="booking-summary-list"></ul>
+            <div class="booking-summary-price">
+              <span>Total</span>
+              <strong id="booking-summary-total">₹0</strong>
+            </div>
+          </div>
+        </aside>
+
+        <form class="booking-form" id="booking-form" novalidate>
+          <h3 class="modal-title" id="booking-modal-title">Complete your reservation</h3>
+          <p class="modal-text">No card required today — we hold the room for 15 minutes while we confirm with you.</p>
+
+          <div class="form-grid">
+            <div class="form-field form-field-full">
+              <label for="b-room">Room</label>
+              <div class="select-wrap">
+                <select id="b-room" name="roomId" required></select>
+                <svg class="select-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="b-check-in">Check-in</label>
+              <input type="date" id="b-check-in" name="checkIn" required>
+            </div>
+            <div class="form-field">
+              <label for="b-check-out">Check-out</label>
+              <input type="date" id="b-check-out" name="checkOut" required>
+            </div>
+            <div class="form-field">
+              <label for="b-guests">Guests</label>
+              <input type="number" id="b-guests" name="guests" min="1" max="20" value="2" required>
+            </div>
+            <div class="form-field">
+              <label for="b-name">Full name</label>
+              <input type="text" id="b-name" name="guestName" required autocomplete="name" placeholder="Your name">
+            </div>
+            <div class="form-field">
+              <label for="b-email">Email</label>
+              <input type="email" id="b-email" name="guestEmail" required autocomplete="email" placeholder="you@email.com">
+            </div>
+            <div class="form-field">
+              <label for="b-phone">Phone</label>
+              <input type="tel" id="b-phone" name="guestPhone" required autocomplete="tel" placeholder="+91 98765 43210">
+            </div>
+            <div class="form-field form-field-full">
+              <label for="b-requests">Special requests <span class="label-optional">optional</span></label>
+              <textarea id="b-requests" name="specialRequests" rows="3" placeholder="Airport transfer, dietary notes, a birthday in the courtyard…"></textarea>
+            </div>
+          </div>
+
+          <p class="form-error" id="booking-error" role="alert" hidden></p>
+
+          <div class="booking-form-actions">
+            <p class="booking-form-policy">Free cancellation up to 7 days before arrival.</p>
+            <button class="btn btn-primary btn-lg" type="submit" id="booking-submit">
+              <span class="btn-label">Confirm Reservation</span>
+              <span class="btn-spinner" aria-hidden="true"></span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= CONCIERGE MODAL ================= -->
+  <div class="modal-backdrop" id="concierge-modal" role="dialog" aria-modal="true" aria-labelledby="concierge-modal-title" hidden>
+    <div class="modal modal-narrow" role="document">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <form class="booking-form" id="concierge-form" novalidate>
+        <h3 class="modal-title" id="concierge-modal-title">Request a private car</h3>
+        <p class="modal-text">A chauffeur, a clean car and a route planned by someone who knows every shortcut in the old city.</p>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="c-name">Full name</label>
+            <input type="text" id="c-name" name="guestName" required autocomplete="name">
+          </div>
+          <div class="form-field">
+            <label for="c-phone">Phone</label>
+            <input type="tel" id="c-phone" name="guestPhone" required autocomplete="tel" placeholder="+91 98765 43210">
+          </div>
+          <div class="form-field">
+            <label for="c-email">Email <span class="label-optional">optional</span></label>
+            <input type="email" id="c-email" name="guestEmail" autocomplete="email">
+          </div>
+          <div class="form-field">
+            <label for="c-destination">Destination</label>
+            <input type="text" id="c-destination" name="destination" placeholder="Amber Fort">
+          </div>
+          <div class="form-field">
+            <label for="c-date">Preferred date</label>
+            <input type="date" id="c-date" name="requestedDate">
+          </div>
+          <div class="form-field form-field-full">
+            <label for="c-notes">Notes <span class="label-optional">optional</span></label>
+            <textarea id="c-notes" name="notes" rows="3" placeholder="Pick-up time, child seats, a longer route…"></textarea>
+          </div>
+        </div>
+        <p class="form-error" id="concierge-error" role="alert" hidden></p>
+        <div class="booking-form-actions">
+          <p class="booking-form-policy">We call within the hour during house hours.</p>
+          <button class="btn btn-primary btn-lg" type="submit" id="concierge-submit">
+            <span class="btn-label">Request Car</span>
+            <span class="btn-spinner" aria-hidden="true"></span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= LIGHTBOX MODAL FOR GALLERY ================= -->
+  <div class="modal-backdrop lightbox-backdrop" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <div class="lightbox-dialog">
+      <button class="modal-close lightbox-close" type="button" data-close-modal aria-label="Close photo viewer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <button class="lightbox-arrow lightbox-prev" type="button" id="lightbox-prev" aria-label="Previous photo">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="lightbox-stage">
+        <img id="lightbox-img" src="" alt="">
+        <div class="lightbox-meta">
+          <span class="lightbox-counter" id="lightbox-counter">1 / 24</span>
+          <h3 class="lightbox-title" id="lightbox-title">Photo title</h3>
+          <p class="lightbox-caption" id="lightbox-caption">Description</p>
+        </div>
+      </div>
+      <button class="lightbox-arrow lightbox-next" type="button" id="lightbox-next" aria-label="Next photo">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= FLOATING HERITAGE CONCIERGE ================= -->
+  <div class="floating-concierge" id="floating-concierge">
+    <button class="concierge-pill" type="button" data-open-concierge aria-label="Open luxury concierge">
+      <span class="diya-glow">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c-.6 2.3-2 4.2-2 6.5 0 2.2 1.8 4 4 4s4-1.8 4-4c0-2.3-1.4-4.2-2-6.5-.5 1.5-1.5 2.5-2 2.5s-1.5-1-2-2.5zm-8 12c0 3.3 3.6 6 8 6s8-2.7 8-6H4z"/></svg>
+      </span>
+      <span class="concierge-pill-text">Heritage Concierge</span>
+    </button>
+  </div>
+
+  <!-- ================= STICKY FLOATING WHATSAPP BUTTON ================= -->
+  <a class="sticky-whatsapp-btn" id="sticky-whatsapp" href="https://wa.me/919660041516?text=Hello%20Ancestral%20Abode,%20I%20would%20like%20to%20inquire%20about%20a%20stay." target="_blank" rel="noopener noreferrer" aria-label="Chat with Host on WhatsApp">
+    <span class="whatsapp-tooltip">Chat with Host on WhatsApp</span>
+    <span class="whatsapp-icon-wrap">
+      <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+        <path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.7.8c-.1.2-.3.2-.5.1-1.3-.6-2.2-1.1-3.1-2.6-.2-.3.1-.5.2-.7l.4-.5c.1-.2.1-.3 0-.5l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.1.2 2 3.1 4.9 4.2 2.4.9 2.9.8 3.4.7.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.5-.3Z"/>
+      </svg>
+    </span>
+  </a>
+
+  <!-- ================= TOAST ================= -->
+  <div class="toast-stack" id="toast-stack" aria-live="polite" aria-atomic="false"></div>
+
+  <script src="/assets/js/app.js?v=20261122" type="module"></script>
+</body>
+</html>

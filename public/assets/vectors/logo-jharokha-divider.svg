@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 48" width="320" height="48" fill="none">
+  <!-- Central miniature chhatri dome from Ancestral Abode logo -->
+  <path d="M160 4 C157 9 154 13 160 20 C166 13 163 9 160 4 Z" fill="#B4532A"/>
+  <path d="M148 20 C148 15 153 12 160 12 C167 12 172 15 172 20 Z" fill="#C89B3C"/>
+  <rect x="150" y="20" width="20" height="10" fill="#B4532A" rx="1"/>
+  <rect x="153" y="22" width="4" height="8" rx="2" fill="#FAF7F2"/>
+  <rect x="158" y="22" width="4" height="8" rx="2" fill="#FAF7F2"/>
+  <rect x="163" y="22" width="4" height="8" rx="2" fill="#FAF7F2"/>
+  <rect x="146" y="30" width="28" height="3" fill="#C89B3C" rx="1"/>
+  
+  <!-- Flanking wavy water lines and chevrons from logo side panels -->
+  <path d="M136 24 Q132 20 128 24 T120 24 T112 24 T104 24 T96 24" stroke="#B4532A" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+  <path d="M184 24 Q188 20 192 24 T200 24 T208 24 T216 24 T224 24" stroke="#B4532A" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+  
+  <!-- Inward pointing chevron triangles from logo -->
+  <path d="M90 20 L84 24 L90 28 Z" fill="#C89B3C"/>
+  <path d="M78 20 L72 24 L78 28 Z" fill="#B4532A"/>
+  <path d="M66 20 L60 24 L66 28 Z" fill="#C89B3C"/>
+
+  <path d="M230 20 L236 24 L230 28 Z" fill="#C89B3C"/>
+  <path d="M242 20 L248 24 L242 28 Z" fill="#B4532A"/>
+  <path d="M254 20 L260 24 L254 28 Z" fill="#C89B3C"/>
+
+  <!-- Logo concentric sun rosettes at ends -->
+  <circle cx="44" cy="24" r="7" stroke="#B4532A" stroke-width="1.2" fill="none"/>
+  <circle cx="44" cy="24" r="3.5" fill="#C89B3C"/>
+  
+  <circle cx="276" cy="24" r="7" stroke="#B4532A" stroke-width="1.2" fill="none"/>
+  <circle cx="276" cy="24" r="3.5" fill="#C89B3C"/>
+
+  <!-- Fine trailing lines -->
+  <line x1="32" y1="24" x2="10" y2="24" stroke="#C89B3C" stroke-width="1" stroke-dasharray="2 3"/>
+  <line x1="288" y1="24" x2="310" y2="24" stroke="#C89B3C" stroke-width="1" stroke-dasharray="2 3"/>
+</svg>
