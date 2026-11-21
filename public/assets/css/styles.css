@@ -1286,12 +1286,17 @@ svg { display: block; }
   .story-rest {
     grid-area: rest;
     width: 100%;
-    max-width: 760px;
-    margin-inline: auto;
     padding-left: 0;
     text-align: center;
   }
-  .story-rest .story-toggle { margin-inline: auto; }
+  /* Desktop shows the full story — no preview / read-more */
+  .story-more.is-collapsible {
+    max-height: none !important;
+    overflow: visible;
+    -webkit-mask-image: none;
+            mask-image: none;
+  }
+  .story-rest .story-toggle { display: none; }
   .story-rest .counter-row {
     justify-content: center;
     padding-top: var(--space-md);
